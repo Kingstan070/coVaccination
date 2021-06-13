@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root {
+  --primary-color-blue:#11ABC1;
+  --primary-color-pink:#DF3062;
+  --primary-color-yellow:#F5B935;
+  --primary-color-green:#4BAC3F;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+#current {
+  font-weight: bolder;
+}
+
+#topkey {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a4df60;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 1em;
+}
+
+#topkey:hover {
+  background-color: #F2F2F2;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: red;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  background-color: #f2f2f2;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  font-size: larger;
+}
+
+.navbar .logo span {
+  color: var(--primary-color-blue);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+/**NAVIGATION BAR**/
+/*MOBILE NAVIGATION*/
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bolder;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+/**MOBILE NAVIGATION**/
+/*SECTION1 SITUATION*/
+.situation {
+  background-color: white;
+  padding-top: 2em;
+}
+
+.situation h1 {
+  color: red;
+}
+
+.situation .country-name h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.situation .country-name h2 span {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--primary-color-pink);
+}
+
+.situation .content {
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2em;
+}
+
+.situation .content .box {
+  width: 140px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.situation .content .box .subtitle {
+  margin: 10px 0 0 8px;
+  font-size: 15px;
+}
+
+.situation .content .box .data {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 10px 0 10px 10%;
+  letter-spacing: 2px;
+}
+
+/*SEARCH BUTTON*/
+.searchBx {
+  width: 60%;
+  height: 40px;
+  max-width: 230px;
+  min-width: 145px;
+  border: 4px solid #2980b9;
+  padding: 0px 10px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.searchBx img {
+  margin-top: 5px;
+}
+
+.elementsContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.searchTxt {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #424242;
+  font-weight: 100;
+  font-family: 'Poppins';
+}
+
+.searchTxt:focus {
+  outline: none;
+}
+
+/**SEARCH BUTTON**/
+/**SECTION1 SITUATION**/
+/*SECTION2 V_SITUATION*/
+.v_situation {
+  background-color: #eaf5e9;
+  padding-top: 2em;
+}
+
+.v_situation h1 {
+  color: var(--primary-color-green);
+}
+
+.v_situation .container {
+  margin-top: 2em;
+}
+
+/**SECTION2 V_SITUATION**/
+/*SECTION3 FAQ*/
+.faq {
+  background-color: #FFF9ED;
+  padding-top: 2em;
+}
+
+.faq h1 {
+  color: var(--primary-color-green);
+}
+
+.faq .box {
+  width: 90%;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.faq .box h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.faq .box p {
+  height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faq .box span {
+  color: var(--primary-color-blue);
+  font-size: 24px;
+}
+
+.faq .box a {
+  display: inline-block;
+  color: white;
+  background-color: var(--primary-color-green);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.faq .box a:hover {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.faq .faq-list {
+  margin: 20px auto;
+}
+
+.faq .showContent p {
+  height: auto;
+}
+
+.faq .showContent a {
+  background-color: var(--primary-color-pink);
+}
+
+/**SECTION3 FAQ**/
+/*SECTION4 RE*/
+.re {
+  background-color: #FCFCFC;
+}
+
+.re .ree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.re h1 {
+  color: var(--primary-color-blue);
+}
+
+.re a {
+  color: white;
+  background-color: var(--primary-color-blue);
+  padding: 4px 10px;
+  width: auto;
+  margin: 10px 10px;
+  border-radius: 20px;
+}
+
+/**SECTION4 RE**/
+@media only screen and (min-width: 680px) {
+  /*SECTION1 SITUATION*/
+  .situation .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  /**SECTION1 SITUATION**/
+}
+
+@media only screen and (min-width: 768px) {
+  /*DESKTOP NAVIGATION*/
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav .contact {
+    color: white;
+    border: 3px solid red;
+    background-color: red;
+    font-weight: bolder;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav .contact:hover {
+    color: red;
+    background-color: #f2f2f2;
+    border: 3px solid red;
+  }
+  /**DESKTOP NAVIGATION**/
+  /*SECTION2 V_SITUATION*/
+  .v_situation .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .v_situation .container iframe {
+    width: 45%;
+  }
+  /**SECTION2 V_SITUATION**/
+  /*SECTION2 FAQ*/
+  .faq .box {
+    width: 300px;
+    margin: 50px auto;
+    padding: 15px;
+  }
+  .faq-list {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px 309x;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  /**SECTION2 FAQ**/
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 7em 4em 10em 4em;
+  }
+  /*SECTION1 SITUATION*/
+  .situation .content {
+    grid-column-gap: 2%;
+    -ms-grid-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto;
+  }
+  /**SECTION1 SITUATION**/
+  /*SECTION3 FAQ*/
+  .faq .box {
+    width: 280px;
+    margin: 50px auto;
+    padding: 15px;
+  }
+  .faq-list {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px 309x;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  /**SECTION3 FAQ**/
+}
+/*# sourceMappingURL=notmain.css.map */

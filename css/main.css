@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+:root {
+  --primary-color-blue:#11ABC1;
+  --primary-color-pink:#DF3062;
+  --primary-color-yellow:#F5B935;
+  --primary-color-green:#4BAC3F;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+#current {
+  font-weight: bolder;
+}
+
+#topkey {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a4df60;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 1em;
+}
+
+#topkey:hover {
+  background-color: #F2F2F2;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+  background-color: #f2f2f2;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  font-size: larger;
+}
+
+.navbar .logo span {
+  color: var(--primary-color-blue);
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+/**NAVIGATION BAR**/
+/*SECTION1 HOME*/
+.hero {
+  text-align: center;
+}
+
+.mid-quote {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: -1em auto 1em auto;
+  letter-spacing: .2em;
+  color: var(--primary-color-pink);
+}
+
+.left-col p {
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: #969696;
+  letter-spacing: .4em;
+  margin-bottom: .1em;
+}
+
+.left-col h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0.05em;
+  letter-spacing: .15em;
+}
+
+.left-col h2 {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: var(--primary-color-yellow);
+  text-transform: uppercase;
+  margin-top: .05em;
+  margin-bottom: .5em;
+}
+
+.left-col .know-cta {
+  background-color: var(--primary-color-pink);
+  margin-top: .3em;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+.left-col .know-cta:hover {
+  background-color: white;
+  color: var(--primary-color-pink);
+  border: 1px solid var(--primary-color-pink);
+}
+
+.left-col .covid-cta {
+  display: inline-block;
+  margin-top: .3em;
+  margin-left: .1em;
+  background-color: var(--primary-color-blue);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+}
+
+.left-col .covid-cta:hover {
+  background-color: white;
+  color: var(--primary-color-blue);
+  border: 1px solid var(--primary-color-blue);
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+/**SECTION1 HOME**/
+/*MOBILE NAVIGATION*/
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bolder;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+/**MOBILE NAVIGATION**/
+/*SECTION2 ABOUT*/
+.about {
+  padding-top: 2em;
+  background-color: #FEFAFB;
+}
+
+.about h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: var(--primary-color-pink);
+}
+
+.about p {
+  width: 90%;
+  padding-top: .5em;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.about p .one {
+  font-weight: 900;
+  color: black;
+  font-size: 2em;
+}
+
+.about p .two {
+  color: var(--primary-color-blue);
+}
+
+.about-img {
+  width: 90%;
+  margin: 2em 5% 1em 5%;
+}
+
+/**SECTION2 ABOUT**/
+/*SECTION3 VACCINE*/
+.vaccine {
+  padding-top: 2em;
+  background-color: #EFF7F9;
+  padding-bottom: 4em;
+}
+
+.vaccine h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: var(--primary-color-blue);
+}
+
+.vaccine .get-vaccine-link {
+  border: 2px solid var(--primary-color-green);
+  text-align: center;
+  max-width: 10em;
+  min-width: 7em;
+  margin: 1em auto 0 auto;
+  background-color: var(--primary-color-green);
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.2em;
+  font-weight: bold;
+  border-radius: 5em;
+  display: block;
+}
+
+.vaccine .get-vaccine-link:hover {
+  border: 2px solid var(--primary-color-green);
+  color: var(--primary-color-green);
+  background-color: #EFF7F9;
+}
+
+.options-cta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: coloum;
+          flex-direction: coloum;
+  overflow-x: scroll;
+  margin: 0 auto;
+  background-color: #d8f9fc;
+  border-radius: 2em;
+}
+
+.options-cta img {
+  width: 20em;
+  margin-right: -3.5em;
+}
+
+/**SECTION3 VACCINE**/
+/*SECTION4 BLOG*/
+.blog {
+  background-color: white;
+  padding-top: 1.2em;
+}
+
+.blog h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: var(--primary-color-yellow);
+}
+
+.blog h2 {
+  margin-left: .5em;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.blog h2 span {
+  color: var(--primary-color-green);
+  font-size: 1.3;
+}
+
+.blog p {
+  width: 90%;
+  padding-top: .5em;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.blog p em {
+  font-weight: bolder;
+}
+
+.blog-img {
+  width: 90%;
+  margin: 2em 5% 1em 5%;
+}
+
+/**SECTION4 BLGOG**/
+/*SECTION5 HOWTO*/
+.howto {
+  padding-top: 2em;
+  background-color: #FFF9ED;
+}
+
+.howto ol {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.howto h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: var(--primary-color-pink);
+  margin-bottom: 2em;
+}
+
+.howto h2 {
+  font-weight: 999;
+}
+
+.howto h2 span {
+  color: var(--primary-color-yellow);
+}
+
+.howto p {
+  width: 90%;
+  padding-top: .5em;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.howto .col-howto {
+  margin-top: 3em;
+}
+
+.howto .howto-link-cta {
+  text-align: center;
+}
+
+#cowin-link-howto {
+  background-color: var(--primary-color-yellow);
+  border: 3px solid var(--primary-color-yellow);
+  margin-top: 1.5em;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1em;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+#cowin-link-howto:hover {
+  background-color: #FFF9ED;
+  border: 3px solid var(--primary-color-yellow);
+  color: var(--primary-color-yellow);
+}
+
+#app-link-android, #app-link-ios {
+  border: 3px solid var(--primary-color-yellow);
+  background-color: var(--primary-color-yellow);
+  margin-right: .5em;
+  margin-top: 1.5em;
+  color: white;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1em;
+  border-radius: 5em;
+  display: inline-block;
+}
+
+#app-link-android:hover, #app-link-ios:hover {
+  background-color: #FFF9ED;
+  border: 3px solid var(--primary-color-yellow);
+  color: var(--primary-color-yellow);
+}
+
+/**SECTION5 HOWTO**/
+/*SECTION6 CONTACT*/
+.contact {
+  padding: 2em 1em;
+  background: #e0e0e0;
+}
+
+.contact h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: .2em;
+  color: var(--primary-color-green);
+}
+
+.contact .contact-list .contacts {
+  position: relative;
+  width: 310px;
+  padding: 10px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 20px auto 0 auto;
+  background: #e0e0e0;
+  -webkit-box-shadow: 5px 5px 27px #b1b1b1, -5px -5px 27px #ffffff;
+          box-shadow: 5px 5px 27px #b1b1b1, -5px -5px 27px #ffffff;
+}
+
+.contact .contact-list .contacts h2, .contact .contact-list .contacts p {
+  margin: 0;
+  margin-left: 90px;
+  color: black;
+}
+
+.contact .contact-list .contacts h2 {
+  font-size: 20px;
+}
+
+.contact .contact-list .contacts p {
+  margin-top: 3px;
+  font-weight: 900;
+  color: darkblue;
+}
+
+.contact .contact-list .contacts img {
+  position: absolute;
+  width: 50px;
+  margin-top: 13px;
+  margin-left: 20px;
+  color: #D4D4D4;
+}
+
+.contact .download-link {
+  position: relative;
+  background: #e0e0e0;
+  -webkit-box-shadow: 5px 5px 27px #b1b1b1, -5px -5px 27px #ffffff;
+          box-shadow: 5px 5px 27px #b1b1b1, -5px -5px 27px #ffffff;
+  width: 300px;
+  height: px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 30px;
+  border-radius: 50px;
+  margin: 20px auto;
+}
+
+.contact .download-link p {
+  margin: 0 0 0 50px;
+}
+
+.contact #pdf-icon {
+  position: absolute;
+  width: 30px;
+  margin-top: 15px;
+}
+
+/**SECTION6 CONTACT**/
+@media only screen and (min-width: 680px) {
+  /*SECTION6 CONTACT*/
+  .contact-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  /**SECTION1 CONTACT**/
+}
+
+@media only screen and (min-width: 768px) {
+  /*DESKTOP NAVIGATION*/
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav .contact {
+    color: white;
+    border: 3px solid red;
+    background-color: red;
+    font-weight: bolder;
+    border-radius: 5em;
+    margin-top: -.2em;
+  }
+  .navbar nav .contact:hover {
+    color: red;
+    background-color: #f2f2f2;
+    border: 3px solid red;
+  }
+  /**DESKTOP NAVIGATION**/
+  /*SECTION3 VACCINE*/
+  .options-cta {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: visible;
+    background-color: #EFF7F9;
+  }
+  .box {
+    width: 250px;
+    margin: 0 10px;
+  }
+  .box img {
+    display: block;
+    width: 100%;
+  }
+  .box:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    z-index: 2;
+  }
+  /**SECTION3 VACCINE**/
+  /*SECCTION4 BLOG*/
+  .blog .container {
+    width: 770px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+  }
+  .blog .container #blog-sputnik-img, .blog .container #right-col-blog-covaxin, .blog .container #blog-covishield-img {
+    margin-top: 7em;
+  }
+  /**SECTION4 BLOG**/
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 7em 4em 10em 4em;
+  }
+  /*SECTION1 HOME*/
+  .mid-quote {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-col {
+    margin: 3em 3em 0 5em;
+  }
+  .hero .container .left-col p {
+    font-size: 2em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 5em;
+  }
+  .hero .container .left-col h2 {
+    font-size: 2em;
+  }
+  .hero-img {
+    width: 50%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+  }
+  /**SECTION1 HOME**/
+  /*SECTION2 ABOUT*/
+  .about .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% auto;
+        grid-template-columns: 30% auto;
+  }
+  /**SECTION2 ABOUT**/
+  /*SECCTION4 BLOG*/
+  .blog .container {
+    width: 1080px;
+  }
+  /**SECTION4 BLOG**/
+  /*SECTION5 HOWTO*/
+  .howto .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /**SECTION5 HOWTO**/
+  /*SECTION6 CONTACT*/
+  .contact-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-column-gap: 2%;
+  }
+  /**SECTION1 CONTACT**/
+}
+/*# sourceMappingURL=main.css.map */
