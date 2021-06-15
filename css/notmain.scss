@@ -6,7 +6,9 @@
     --primary-color-yellow:#F5B935;
     --primary-color-green:#4BAC3F;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: white;
     margin: 0;
